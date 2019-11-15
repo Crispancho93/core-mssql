@@ -1,0 +1,9 @@
+Conectar con mssql
+
+1- dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 3.0.0
+2- dotnet add package Microsoft.EntityFrameworkCore.Design --version 3.0.0
+3- dotnet add package Microsoft.EntityFrameworkCore.Tools --version 3.0.0
+4- dotnet add package System.Data.SqlClient --version 4.8.0-preview3.19551.4
+5- dotnet add package Microsoft.EntityFrameworkCore.Relational --version 3.0.0
+
+dotnet ef dbcontext scaffold "Server=NEWSOFT02-PC\SQLEXPRESS;Database=administrativo;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o .\Models\
